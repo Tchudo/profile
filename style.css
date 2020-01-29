@@ -18,6 +18,7 @@
 }
 
 body {
+  background-image: url("images/fond.png");
   background-color: #C8C9DD;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -47,7 +48,8 @@ a {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0,0,0,.3);
-
+  transition-property: background-color; /* Active la transition sur background-color */
+  transition-duration: 1s; /* La transition dure 1s */
 }
 a:hover {
   color: #697291  ;
@@ -61,11 +63,18 @@ a:hover {
   border-radius: 5px;
   padding:30px;
   text-align: center;
-  margin: 20px auto;
+  margin: 20px 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  transition-property: margin; /* Active la transition sur background-color */
+  transition-duration: 1s; /* La transition dure 1s */
+}
+
+.card:hover {
+  margin: 15px 10px;
 }
 
 .container {
+
   margin: 10px auto;
   padding: 10px auto;
   max-width: 720px
@@ -75,6 +84,12 @@ a:hover {
   width:200px;
   border-radius: 50%;
   box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  transition-property: width; /* Active la transition sur background-color */
+  transition-duration: 2s; /* La transition dure 1s */
+}
+
+#moi:hover {
+  width:250px;
 }
 
 li {
